@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoMimic Privacy Policy</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+       "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto;
+       padding: 24px 16px 64px; line-height: 1.65; color: #1c1c1e; }
+h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2em; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem;
+        display: block; overflow-x: auto; }
+th, td { border: 1px solid #d1d1d6; padding: 8px 10px; text-align: left; }
+th { background: #f2f2f7; }
+a { color: #0a66c2; }
+nav { font-size: 0.9rem; margin-bottom: 24px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #eee; }
+  th { background: #222; } th, td { border-color: #444; }
+  a { color: #6cb2ff; }
+}
+</style>
+</head>
+<body>
+<nav><a href="index.html">← ShotCue Legal</a></nav>
+<h1>PhotoMimic Privacy Policy</h1>
+<p><strong>Effective date</strong>: 2026-07-09
+<strong>Last updated</strong>: 2026-07-09</p>
+<p>PhotoMimic ("we", "us") respects your privacy. This policy describes what data we collect, how we use it, and your rights.</p>
+<h2>1. Data we collect</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Item</th>
+<th>How collected / where stored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account (optional)</td>
+<td>Apple <code>userIdentifier</code>, name and email (only if you choose to share them at sign-in)</td>
+<td>Sign in with Apple. <strong>Stored only on your device (Keychain); never sent to our servers</strong></td>
+</tr>
+<tr>
+<td>Service usage</td>
+<td>Anonymous install identifier (random UUID), free-analysis usage count, first/last used timestamps</td>
+<td>Sent automatically with analysis requests; stored on our server</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>App Store subscription receipt (JWS token)</td>
+<td>Included with Pro requests for verification only. <strong>Not stored on our servers (stateless verification)</strong></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>The reference photo you submit (downsized JPEG with EXIF removed) plus capture values (focal length, gravity vector, face-tilt angle)</td>
+<td>Sent when you request analysis. <strong>Discarded immediately after analysis; never stored</strong></td>
+</tr>
+<tr>
+<td>Support</td>
+<td>Email address (optional, for replies), your message, app version, device model, OS version, hashed anonymous ID</td>
+<td>When you send a support email</td>
+</tr>
+</tbody>
+</table>
+<p><strong>We do NOT collect</strong>: location (GPS — location EXIF is stripped on-device before upload), contacts, full photo library index, IDFA (advertising ID), or national ID numbers. We use no crash-reporting or behavioral-analytics SDKs.</p>
+<h2>2. How we use your data</h2>
+<ul>
+<li>Provide camera-calibration guidance (analyze reference photos)</li>
+<li>Manage the free-tier quota, verify subscription entitlement, and prevent abuse</li>
+<li>Respond to your inquiries</li>
+</ul>
+<h2>3. Retention</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple userIdentifier, name, email</td>
+<td>Stored only on your device; removed immediately when you sign out or delete your account</td>
+</tr>
+<tr>
+<td>Anonymous install identifier &amp; free-usage records</td>
+<td>Kept to prevent abuse. On account deletion (or email request) the identifier is <strong>immediately replaced with an irreversible one-way hash</strong> (separated storage), used only to prevent free-quota abuse</td>
+</tr>
+<tr>
+<td>Photo content</td>
+<td>Discarded from server memory immediately after analysis (never stored)</td>
+</tr>
+<tr>
+<td>Analysis metadata</td>
+<td>Stored only on your device — not on our servers</td>
+</tr>
+<tr>
+<td>Server access logs (request path, status code, latency — no personal identifiers)</td>
+<td>90 days</td>
+</tr>
+<tr>
+<td>Support emails</td>
+<td>1 year after reply</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Sharing with third parties</h2>
+<p>We do <strong>not sell or share</strong> your personal data with third parties for marketing. Disclosure is made only when required by law.</p>
+<h2>5. Processors (data sub-processors)</h2>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th>Purpose</th>
+<th>Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple Inc.</td>
+<td>Sign in with Apple / App Store IAP</td>
+<td>US, EU</td>
+</tr>
+<tr>
+<td><TODO: backend hosting provider></td>
+<td>Analysis API (photo analysis, free-tier quota)</td>
+<td><TODO></td>
+</tr>
+</tbody>
+</table>
+<h2>6. International data transfers</h2>
+<p>Sign-in and payment data are handled by Apple under Apple's transfer mechanisms. Declining these transfers limits sign-in and subscription features; core app features still work.</p>
+<h2>7. Children's privacy</h2>
+<p>The Service requires users to be <strong>at least 14 years old</strong>. We do not knowingly collect personal data from children under 14. If we learn that we have, we will delete it without delay.</p>
+<h2>8. Your rights</h2>
+<p>You can at any time:
+- Request access to your data
+- Request correction or deletion
+- Restrict processing
+- Withdraw consent</p>
+<p><strong>How to exercise</strong>:
+- In-app: <strong>Settings → Delete Account</strong>
+- Email: woow070840@gmail.com</p>
+<h2>9. Data Protection Officer / Contact</h2>
+<ul>
+<li>Name: <TODO: contact name></li>
+<li>Email: woow070840@gmail.com</li>
+<li>Address: <TODO></li>
+</ul>
+<h2>10. Changes to this policy</h2>
+<p>We will notify you in-app at least 7 days before changes take effect (30 days for material changes affecting your rights).</p>
+<p><strong>Change log</strong>:
+- 2026-07-09: Corrected to match actual service behavior — removed crash/analytics SDK and iCloud entries (not used), added anonymous install identifier / free-usage records and support items, added under-14 age requirement
+- 2026-05-18: Initial draft</p>
+</body>
+</html>

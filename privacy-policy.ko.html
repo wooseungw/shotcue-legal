@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoMimic 개인정보처리방침</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+       "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto;
+       padding: 24px 16px 64px; line-height: 1.65; color: #1c1c1e; }
+h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2em; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem;
+        display: block; overflow-x: auto; }
+th, td { border: 1px solid #d1d1d6; padding: 8px 10px; text-align: left; }
+th { background: #f2f2f7; }
+a { color: #0a66c2; }
+nav { font-size: 0.9rem; margin-bottom: 24px; }
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #eee; }
+  th { background: #222; } th, td { border-color: #444; }
+  a { color: #6cb2ff; }
+}
+</style>
+</head>
+<body>
+<nav><a href="index.html">← ShotCue Legal</a></nav>
+<h1>PhotoMimic 개인정보처리방침</h1>
+<p><strong>시행일자</strong>: 2026-07-09
+<strong>최종 수정일</strong>: 2026-07-09</p>
+<p>PhotoMimic("우리")은 사용자의 개인정보를 보호하기 위해 한국 「개인정보 보호법」(이하 "개보법")에 따라 다음과 같이 처리방침을 수립·공개합니다.</p>
+<h2>1. 수집하는 개인정보 항목 및 수집 방법</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>항목</th>
+<th>수집 방법 및 저장 위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>계정 (선택)</td>
+<td>Apple <code>userIdentifier</code>, 이름·이메일(가입 시 사용자가 제공에 동의한 경우)</td>
+<td>Sign in with Apple. <strong>이용자 기기(Keychain)에만 저장되며 회사 서버로 전송되지 않음</strong></td>
+</tr>
+<tr>
+<td>서비스 이용</td>
+<td>익명 설치 식별자(무작위 UUID), 무료 분석 사용 횟수, 최초·최종 사용 시각</td>
+<td>사진 분석 요청 시 자동 수집, 회사 서버에 저장</td>
+</tr>
+<tr>
+<td>결제</td>
+<td>App Store 구독 영수증(JWS 토큰)</td>
+<td>Pro 구독 확인 시 요청에 포함되어 검증에만 사용. <strong>서버에 저장하지 않음(무상태 검증)</strong></td>
+</tr>
+<tr>
+<td>콘텐츠</td>
+<td>분석 요청한 참고 사진 1장(축소되고 EXIF가 제거된 JPEG) 및 촬영 수치(초점거리, 중력 벡터, 얼굴 기울기 각도)</td>
+<td>분석 요청 시 전송. <strong>분석 완료 즉시 폐기, 저장하지 않음</strong></td>
+</tr>
+<tr>
+<td>문의</td>
+<td>이메일 주소(회신용, 선택), 문의 내용, 앱 버전·기기 모델·OS 버전·익명 ID 해시</td>
+<td>사용자가 문의 메일을 발송할 때</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수집하지 않는 것</strong>: 위치정보(GPS 등 — 사진의 위치 EXIF는 전송 전 기기에서 제거됨), 연락처, 사진첩 전체 인덱스, 광고 식별자(IDFA), 주민등록번호. 크래시 리포팅·행태 분석 SDK를 사용하지 않습니다.</p>
+<h2>2. 개인정보의 처리 목적</h2>
+<ul>
+<li>카메라 보정 가이드 제공 (참고 사진 분석)</li>
+<li>무료 이용 한도 관리, 구독 자격(entitlement) 확인 및 부정 사용 방지</li>
+<li>사용자 문의 응답</li>
+</ul>
+<h2>3. 보유 및 이용 기간</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple userIdentifier·이름·이메일</td>
+<td>이용자 기기에만 저장. 로그아웃 또는 계정 삭제 시 기기에서 즉시 삭제</td>
+</tr>
+<tr>
+<td>익명 설치 식별자·무료 사용량 기록</td>
+<td>부정 사용 방지 목적으로 보유. 계정 삭제(또는 이메일 요청) 시 식별자를 <strong>복원 불가능한 일방향 해시로 즉시 변환(분리 보관)</strong> — 무료 한도 부정 재설정 방지 목적으로만 사용</td>
+</tr>
+<tr>
+<td>참고 사진 본문</td>
+<td>분석 직후 즉시 서버 메모리에서 폐기 (저장하지 않음)</td>
+</tr>
+<tr>
+<td>분석 결과 메타데이터</td>
+<td>이용자 기기에만 저장 (회사 서버에 없음)</td>
+</tr>
+<tr>
+<td>서버 접속 로그 (요청 경로·상태 코드·처리 시간 — 개인 식별자 미포함)</td>
+<td>90일</td>
+</tr>
+<tr>
+<td>사용자 문의 메일</td>
+<td>응답 후 1년</td>
+</tr>
+</tbody>
+</table>
+<h2>4. 제3자 제공</h2>
+<p>PhotoMimic은 사용자의 개인정보를 제3자에게 <strong>판매·제공하지 않습니다</strong>. 법령에 의한 요구가 있는 경우에 한해 관련 기관에 제공할 수 있습니다.</p>
+<h2>5. 처리위탁</h2>
+<table>
+<thead>
+<tr>
+<th>수탁자</th>
+<th>위탁 업무</th>
+<th>보유·이용 기간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple Inc. (US)</td>
+<td>로그인(Sign in with Apple) / 결제(App Store IAP)</td>
+<td>Apple 정책</td>
+</tr>
+<tr>
+<td><TODO: 백엔드 호스팅 업체></td>
+<td>분석 API 운영 (사진 분석·무료 사용량 관리)</td>
+<td>사용자 삭제 요청 시까지</td>
+</tr>
+</tbody>
+</table>
+<h2>6. 개인정보의 국외 이전</h2>
+<table>
+<thead>
+<tr>
+<th>수탁자</th>
+<th>이전 국가</th>
+<th>이전 항목</th>
+<th>이전 목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apple</td>
+<td>미국·아일랜드 등</td>
+<td>userIdentifier, 결제 영수증</td>
+<td>로그인·결제</td>
+</tr>
+</tbody>
+</table>
+<p>이전 거부 시 Apple 로그인·구독 기능 이용이 제한될 수 있으나 앱의 핵심 기능은 정상 이용 가능합니다.</p>
+<h2>7. 개인정보의 파기 절차 및 방법</h2>
+<ul>
+<li><strong>파기 시점</strong>: 보유 기간 만료 또는 사용자가 삭제를 요청한 때</li>
+<li><strong>파기 절차</strong>: 삭제 요청 접수 후 지체 없이 파기 (앱 내 계정 삭제는 즉시 서버에 삭제 요청을 전송)</li>
+<li><strong>파기 방법</strong>: 전자 파일은 복구 불가능한 방법으로 영구 삭제. 무료 사용량 기록의 식별자는 복원 불가능한 일방향 해시로 변환하여 원 식별자를 파기</li>
+</ul>
+<h2>8. 아동의 개인정보</h2>
+<p>서비스는 <strong>만 14세 이상</strong>만 이용할 수 있으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 만 14세 미만 아동의 개인정보가 수집된 사실을 알게 된 경우 지체 없이 파기합니다.</p>
+<h2>9. 정보주체의 권리·의무 및 행사 방법</h2>
+<p>사용자는 언제든지 다음 권리를 행사할 수 있습니다:
+- 개인정보 열람 요구
+- 정정·삭제 요구
+- 처리 정지 요구
+- 동의 철회</p>
+<p><strong>행사 방법</strong>:
+- 앱 내: <strong>Settings → 계정 삭제</strong>
+- 이메일: woow070840@gmail.com</p>
+<h2>10. 개인정보 보호책임자</h2>
+<ul>
+<li><strong>이름</strong>: <TODO: 책임자 이름></li>
+<li><strong>이메일</strong>: woow070840@gmail.com</li>
+<li><strong>전화</strong>: <TODO: 010-xxxx-xxxx></li>
+</ul>
+<h2>11. 권익침해 구제 방법</h2>
+<ul>
+<li>개인정보분쟁조정위원회 (kopico.go.kr) — 1833-6972</li>
+<li>개인정보침해신고센터 (privacy.go.kr) — 118</li>
+<li>대검찰청 사이버수사과 (spo.go.kr) — 1301</li>
+<li>경찰청 사이버범죄 신고시스템 (ecrm.cyber.go.kr) — 182</li>
+</ul>
+<h2>12. 본 방침의 변경</h2>
+<p>본 방침이 변경될 경우, 시행 7일 전 앱 시작 시 모달과 본 페이지를 통해 안내합니다. 정보주체의 권리에 중대한 영향을 미치는 변경은 30일 전에 안내합니다.</p>
+<p><strong>변경 이력</strong>:
+- 2026-07-09: 실제 서비스 동작 기준 전면 정정 — 크래시·분석 SDK 및 iCloud 항목 삭제(미사용), 익명 설치 식별자·무료 사용량 기록 및 문의 항목 추가, 아동(만 14세 미만) 조항 신설
+- 2026-05-18: 초안 작성</p>
+</body>
+</html>
