@@ -87,7 +87,7 @@ nav { font-size: 0.9rem; margin-bottom: 24px; }
 </tr>
 <tr>
 <td>Anonymous install identifier &amp; free-usage records</td>
-<td>Kept to prevent abuse. On account deletion (or email request) the identifier is <strong>immediately replaced with an irreversible one-way hash</strong> (separated storage), used only to prevent free-quota abuse</td>
+<td>Kept to prevent abuse. Our server <strong>never stores the raw identifier — only a one-way pseudonymous key (HMAC)</strong>. On account deletion (or email request) the account data (usage timestamps) is erased immediately; only the free-usage counter is retained under the pseudonymous key (separated storage) to prevent free-quota abuse, and it re-applies only if the same device uses the service again</td>
 </tr>
 <tr>
 <td>Photo content</td>
